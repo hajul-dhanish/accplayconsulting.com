@@ -1,20 +1,24 @@
-name: Deploy to GitHub Pages
+name: Deploy to Live Branch
 
 on:
   pull_request:
+    types:
+      - closed  # Runs only when PR is merged
     branches:
-      - main
+      - main    # Only deploy when PR merges into main
 
 jobs:
   deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GH_PAT }}
-          publish_branch: live 
+      - name: Push Changes to Live Branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B live
+          git push origin live --force
