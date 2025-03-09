@@ -1,56 +1,57 @@
 /* Tablets */
 
 /* Services - Icons to the left and Stack items*/
-#services .items{
+#services .items {
   display: block;
   padding: 1rem
 }
 
-#services .items .item{
+#services .items .item {
   display: flex;
   text-align: left;
 }
 
-#services .items .item i{
+#services .items .item i {
   margin-right: 1.3rem;
   align-self: center;
   margin-bottom: 0;
 }
 
 /* Smartphones */
-@media(max-width: 510px){
+@media(max-width: 510px) {
+
   /* Nav Bar */
-  #nav-bar{
+  #nav-bar {
     flex-direction: column;
     align-items: center;
   }
 
-  #nav-bar .logo{
+  #nav-bar .logo {
     margin-bottom: 1rem;
     text-align: center;
   }
 
-  #showcase .showcase-content{
+  #showcase .showcase-content {
     margin-top: -2rem;
   }
 
   /* Team Section */
 
-  #team{
+  #team {
     flex-direction: column;
   }
 
-  #team .team-img{
+  #team .team-img {
     flex-basis: 200px;
     border-top: #333 solid 5px;
   }
 
   /* Contact Section */
-  #contact{
+  #contact {
     flex-direction: column;
   }
 
-  #contact .map{
+  #contact .map {
     flex-basis: 300px;
     border-top: #333 solid 5px;
   }
@@ -58,12 +59,12 @@
 
 /* Iphone 5 */
 
-@media(max-height: 568px){
-  .l-heading{
+@media(max-height: 568px) {
+  .l-heading {
     font-size: 3rem;
   }
 
-  .lead{
+  .lead {
     font-size: 1rem;
   }
 }
