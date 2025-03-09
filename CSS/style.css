@@ -88,7 +88,7 @@ ul {
 }
 
 .btn:hover {
-  background: #38455B;
+  background: rgb(45, 186, 29);
 }
 
 .btn-dark {
@@ -163,12 +163,13 @@ ul {
 }
 
 /* Showcase */
-
 #showcase {
-  background: #333 url('../img/showcase.png') no-repeat center/cover;
+  background: #ECECEC url('../img/showcase.png') no-repeat center/cover;
   height: 100vh;
   color: #38455B;
 }
+
+
 
 #showcase .showcase-content {
   display: flex;
@@ -176,10 +177,7 @@ ul {
   justify-content: center;
   align-items: self-start;
   height: 100%;
-  /* padding: 0 2rem; */
   padding-left: 10rem;
-  /* Overlay */
-  /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
 /* Services */

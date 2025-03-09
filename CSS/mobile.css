@@ -25,13 +25,14 @@
     align-items: start;
   }
 
-  #nav-bar .logo {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
   #nav-bar .nav-menu {
     visibility: hidden;
+  }
+
+  #showcase {
+    background: #ECECEC no-repeat center/cover;
+    height: 100vh;
+    color: #38455B;
   }
 
   #showcase .showcase-content {
@@ -45,12 +46,9 @@
     align-items: self-start;
     height: 100%;
     padding: 0 2rem;
-    /* Overlay */
-    /* background-color: rgba(0, 0, 0, 0.4); */
   }
 
   /* Team Section */
-
   #team {
     flex-direction: column;
   }
