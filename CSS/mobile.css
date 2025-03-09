@@ -3,7 +3,6 @@
 /* Services - Icons to the left and Stack items*/
 #services .items {
   display: block;
-  padding: 1rem
 }
 
 #services .items .item {
@@ -23,20 +22,33 @@
   /* Nav Bar */
   #nav-bar {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
 
-  #nav-bar .logo {
-    margin-bottom: 1rem;
-    text-align: center;
+  #nav-bar .nav-menu {
+    visibility: hidden;
+  }
+
+  #showcase {
+    background: #ECECEC no-repeat center/cover;
+    height: 100vh;
+    color: #38455B;
   }
 
   #showcase .showcase-content {
     margin-top: -2rem;
   }
 
-  /* Team Section */
+  #showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    height: 100%;
+    padding: 0 2rem;
+  }
 
+  /* Team Section */
   #team {
     flex-direction: column;
   }

@@ -15,15 +15,6 @@ function initMap() {
   });
 }
 
-// Makes the nav bar background transparent once the page is scrolled
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 400) {
-    this.document.querySelector('#nav-bar').style.background = '#ECECECnull';
-  } else {
-    this.document.querySelector('#nav-bar').style.background = null;
-  }
-});
-
 //jQuery smooth scrolling
 $('#nav-bar a, .btn').on('click', function (event) {
   if (this.hash !== '') {
