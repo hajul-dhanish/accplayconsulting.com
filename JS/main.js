@@ -17,10 +17,10 @@ function initMap() {
 
 // Makes the nav bar background transparent once the page is scrolled
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 150) {
-    this.document.querySelector('#nav-bar').style.background = 'rgba(51, 51, 51, 0.9)';
+  if (window.scrollY > 400) {
+    this.document.querySelector('#nav-bar').style.background = '#ECECECnull';
   } else {
-    this.document.querySelector('#nav-bar').style.background = '#333';
+    this.document.querySelector('#nav-bar').style.background = null;
   }
 });
 
