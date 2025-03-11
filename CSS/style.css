@@ -88,7 +88,7 @@ ul {
 }
 
 .btn:hover {
-  background: rgb(45, 186, 29);
+  background: rgb(44, 44, 44);
 }
 
 .btn-dark {
@@ -135,10 +135,10 @@ ul {
   background-color: #ECECEC;
   color: #38455B;
   position: sticky;
-  padding-left: 0.0rem;
+  padding-left: 1.0rem;
   padding-top: 0.0rem;
   padding-bottom: 0.0rem;
-  padding-right: 0rem;
+  padding-right: 1rem;
   top: 0;
   justify-content: space-between;
   /* stay on top of everything */
@@ -274,3 +274,30 @@ ul {
   background: #444;
 
 }
+
+/* #team-player {
+  margin: auto;
+  background-color: #ECECEC;
+}
+
+.team-column {
+  float: center;
+  width: 20%;
+  padding-left: 10px;
+}
+
+.team-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.team-container {
+  padding: 16px;
+}
+
+.team-row {
+  display: flex;
+}
+
+.team-title {
+  color: grey;
+} */
