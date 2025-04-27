@@ -13,7 +13,9 @@
   <link rel="stylesheet" media='screen and (min-width: 1100px)' href="./CSS/widescreen.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="icon" type="./img/logos/org_logo.png" href="./img/logos/org_logo.png" />
-
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <title>AccPlay Accounting & Consulting</title>
 </head>
@@ -151,42 +153,47 @@
     </div>
   </section>
 
-  <!-- <div class="team-section">
+  <div class="team-section">
     <h2 class="section-title">Our Team</h2>
-
     <div class="team-row">
       <div class="team-card">
-        <div class="card-image">Image 1</div>
+        <!-- <div class="card-image">Image 1</div> -->
         <div class="card-content">
-          <h3 class="member-name">Unknow guy</h3>
-          <p class="designation">Random Developer</p>
+          <h3 class="member-name">Sai Krishna</h3>
+          <p class="designation">Managing Partner</p>
           <p class="description">
-            A passionate Brogrammer who builds smooth UI/UX for mobile and web. Always pushing limits with clean and
-            scalable code.
+            A Chartered Accountant with Big 4 experience, skilled in statutory audits, audit support outsourcing,
+            financial reporting, internal audits, and risk assessments across industries. He brings precision and
+            expertise in GAAP, IFRS, and financial process improvements.
           </p>
           <div class="social-icons">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin" onclick=""></i>
+            <i class="fa fa-envelope" title="saikrishna@accplayconsulting.com"
+              onclick="window.location.href='mailto:saikrishna@accplayconsulting.com'"></i>
           </div>
         </div>
       </div>
 
       <div class="team-card">
-        <div class="card-image">Image 2</div>
+        <!-- <div class="card-image">Image 2</div> -->
         <div class="card-content">
-          <h3 class="member-name">Unknow user</h3>
-          <p class="designation">UI/UX Designer</p>
+          <h3 class="member-name">Suriya R</h3>
+          <p class="designation">Senior Manager</p>
           <p class="description">
-            Always crafting pixel-perfect designs that breathe life into your apps and elevate user experience.
+            A finance professional with extensive experience in statutory audits, IFC implementation, compliance, and
+            accounting outsourcing. He brings a strong focus on internal controls, financial accuracy, and process
+            efficiency across diverse industries.
           </p>
           <div class="social-icons">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin"
+              onclick="window.open('https://www.linkedin.com/in/suriya-r-1a2102227', '_blank')"></i>
+            <i class="fa fa-envelope" title="suriya.r@accplayconsulting.com"
+              onclick="window.location.href='mailto:suriya.r@accplayconsulting.com'"></i>
           </div>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
 
 
@@ -208,9 +215,8 @@
     </div>
   </section> -->
 
-  <!-- Section Contact -->
   <section id="contact">
-    <div class="contact-form bg-primary p-3">
+    <div class="contact-content bg-primary p-3">
       <h2 class="m-heading">Let's Connect!</h2>
       <p class="justify">Your thoughts, questions, and feedback are what help us grow and improve AccPlay. Whether
         you've
@@ -231,21 +237,22 @@
           </a>
         </div>
         <div class="contact-card">
-          <a class="hyperlink" href="">
+          <a class="hyperlink" href="https://www.google.com/maps?q=13.0313036,80.2097031">
             <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
             <span>Chennai, Tamil Nadu, India</span>
           </a>
         </div>
       </div>
     </div>
-    <div class="map">
+    <div id="map">
+      <!-- Leaflet map embed stays here -->
     </div>
   </section>
 
   <!-- Footer -->
   <footer id='main-footer' class='bg-dark text-center py-1'>
     <div class="container">
-      <p> AccPlay &copy; 2025, All Rights Reserved | v25041001</p>
+      <p> AccPlay &copy; 2025, All Rights Reserved</p>
     </div>
   </footer>
 </body>
