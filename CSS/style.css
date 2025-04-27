@@ -243,11 +243,29 @@ ul {
 /* Contact Section */
 #contact {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ECECEC;
 }
 
-#contact .map,
-#contact .contact-form {
-  flex: 1;
+@media (min-width: 768px) {
+  #contact {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  #contact .contact-content {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  #map {
+    flex: 1;
+    height: 100%;
+    min-height: 400px;
+  }
 }
 
 #contact .contact-form .form-group {
@@ -280,6 +298,12 @@ ul {
 
 #contact .contact-form .btn:hover {
   background: #444;
+}
+
+@media (min-width: 768px) {
+  #contact {
+    flex-direction: row;
+  }
 }
 
 a.hyperlink:link {
@@ -390,7 +414,7 @@ a.hyperlink:active {
 }
 
 .card-image {
-  width: 40%;
+  width: 50%;
   background-color: #e74c3c;
   color: white;
   display: flex;
@@ -424,9 +448,13 @@ a.hyperlink:active {
   margin-bottom: 1.5rem;
 }
 
+.social-icons i:hover {
+  color: rgba(128, 128, 128, 0.6);
+}
+
 .social-icons i {
   font-size: 1.3rem;
   margin-right: 1rem;
-  color: #333;
+  color: #38455B;
   cursor: pointer;
 }
